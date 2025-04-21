@@ -9,4 +9,3 @@ export default {
     '@semantic-release/git', // commit package.json and changelog changes
   ],
 };
-  
