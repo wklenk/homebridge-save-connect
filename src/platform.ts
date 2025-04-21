@@ -1,11 +1,12 @@
-import type {
-  API,
-  Characteristic,
-  DynamicPlatformPlugin,
-  Logging,
-  PlatformAccessory,
-  PlatformConfig,
-  Service,
+import {
+  Categories,
+  type API,
+  type Characteristic,
+  type DynamicPlatformPlugin,
+  type Logging,
+  type PlatformAccessory,
+  type PlatformConfig,
+  type Service,
 } from 'homebridge';
 
 import { SaveConnectPlatformAccessory } from './platformAccessory.js';
@@ -146,6 +147,7 @@ export class SaveConnectPlatform implements DynamicPlatformPlugin {
         const accessory = new this.api.platformAccessory(
           device.displayName,
           uuid,
+          Categories.FAN,
         );
 
         // store a copy of the device object in the `accessory.context`

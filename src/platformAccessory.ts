@@ -41,7 +41,6 @@ export class SaveConnectPlatformAccessory {
     private readonly accessory: PlatformAccessory,
   ) {
     // set accessory information
-    this.accessory.category = this.platform.api.hap.Categories.FAN;
     this.accessory
       .getService(this.platform.Service.AccessoryInformation)!
       .setCharacteristic(
