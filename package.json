@@ -2,20 +2,24 @@
   "name": "homebridge-save-connect",
   "displayName": "Example SAVE CONNECT integration into Homebridge",
   "type": "module",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Homebridge plugin for Systemair SAVE CONNECT Module",
   "author": "Wolfgang Klenk <wolfgang.klenk@gmail.com>",
   "license": "Apache-2.0",
-  "homepage": "https://github.com/USERNAME/GITHUB_PROJECT_NAME#readme",
+  "homepage": "https://github.com/wklenk/homebridge-save-connect",
   "repository": {
     "type": "git",
-    "url": "https://github.com/USERNAME/GITHUB_PROJECT_NAME.git"
+    "url": "https://github.com/wklenk/homebridge-save-connect.git"
   },
   "bugs": {
-    "url": "https://github.com/USERNAME/GITHUB_PROJECT_NAME/issues"
+    "url": "https://github.com/wklenk/homebridge-save-connect/issues"
   },
   "keywords": [
-    "homebridge-plugin"
+    "homebridge-plugin",
+    "homebridge",
+    "save-connect",
+    "ventilation",
+    "systemair"
   ],
   "main": "dist/index.js",
   "engines": {
