@@ -1,10 +1,10 @@
 # homebridge-save-connect
 
 > ⚠️ **Experimental Plugin**  
-> This plugin is a **proof-of-concept** to explore integration of **Systemair SAVE CONNECT** ventilation devices into Homebridge and Apple Home.  
-> 
-> Its current main purpose is to allow **triggering short-term ventilation** ("Refresh" user mode) — for example, after detecting heavy steam buildup in a bathroom or shower room.  
-> 
+> This plugin is a **proof-of-concept** to explore integration of **Systemair SAVE CONNECT** ventilation devices into Homebridge and Apple Home.
+>
+> Its current main purpose is to allow **triggering short-term ventilation** ("Refresh" user mode) — for example, after detecting heavy steam buildup in a bathroom or shower room.
+>
 > More features may be added in the future.
 
 ---
@@ -56,10 +56,7 @@ You need to have the following section in your Homebridge config file:
 }
 ```
 
-
 ## Supported ventilation systems
 
 This plugin was developed for and tested for a **Systemair SAVE VSR 300** ventilation system
 with a **SAVE CONNECT** module attached.
-
-
