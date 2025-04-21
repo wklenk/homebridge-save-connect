@@ -20,7 +20,6 @@ const REG_16101 = 16100; // Unknown register.
 const REFRESH_TIME_MINUTES = 5; // Duration of the refresh mode in minutes.
 const USER_MODE_REQUEST_AUTO = 1; // For requesting user mode "Auto".
 const USER_MODE_REQUEST_REFRESH = 4; // For requesting user mode "Refresh".
-const ACTIVE_USER_MODE_AUTO = 0; // Active user mode "Auto".
 const ACTIVE_USER_MODE_REFRESH = 3; // Active user mode "Refresh".
 
 interface ReadResponse {
