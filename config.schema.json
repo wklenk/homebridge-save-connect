@@ -1,0 +1,11 @@
+{
+  "pluginAlias": "SaveConnectPlatform",
+  "pluginType": "platform",
+  "singular": true,
+  "strictValidation": false,
+  "schema": {
+    "type": "object",
+    "properties": {},
+    "required": []
+  }
+}

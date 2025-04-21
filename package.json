@@ -1,0 +1,49 @@
+{
+  "name": "homebridge-save-connect",
+  "displayName": "Example SAVE CONNECT integration into Homebridge",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Homebridge plugin for Systemair SAVE CONNECT Module",
+  "author": "Wolfgang Klenk <wolfgang.klenk@gmail.com>",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/USERNAME/GITHUB_PROJECT_NAME#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/USERNAME/GITHUB_PROJECT_NAME.git"
+  },
+  "bugs": {
+    "url": "https://github.com/USERNAME/GITHUB_PROJECT_NAME/issues"
+  },
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "main": "dist/index.js",
+  "engines": {
+    "node": "^18.20.4 || ^20.18.0 || ^22.10.0",
+    "homebridge": "^1.8.0 || ^2.0.0-beta.0"
+  },
+  "scripts": {
+    "build": "rimraf ./dist && tsc",
+    "lint": "eslint . --max-warnings=0",
+    "prepublishOnly": "npm run lint && npm run build",
+    "watch": "npm run build && npm link && nodemon",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\""
+  },
+  "dependencies": {
+    "dnssd": "^0.4.1",
+    "homebridge-lib": "^7.1.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@types/dnssd": "^0.4.5",
+    "@types/node": "^22.14.1",
+    "eslint": "^9.21.0",
+    "homebridge": "^2.0.0-beta.0",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.5.3",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.24.1"
+  }
+}
