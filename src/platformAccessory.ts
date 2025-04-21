@@ -121,6 +121,11 @@ export class SaveConnectPlatformAccessory {
         "${REG_16101}":0
       }`.replace(/\s/g, ''); // removes all spaces and line breaks;
       await this.sendWriteRequest(payload);
+
+      this.crowdedService.updateCharacteristic(
+        this.platform.Characteristic.On,
+        false, // Now that user mode "Refresh" is active, turn of the switch for user mode "Crowded".
+      );
     } else {
       // Turn off user mode "Refresh" by switching to user mode "Auto".
       const payload = `{
@@ -153,6 +158,11 @@ export class SaveConnectPlatformAccessory {
         "${REG_16101}":0
       }`.replace(/\s/g, ''); // removes all spaces and line breaks;
       await this.sendWriteRequest(payload);
+
+      this.refreshService.updateCharacteristic(
+        this.platform.Characteristic.On,
+        false, // Now that user mode "Crowded" is active, turn of the switch for user mode "Refresh".
+      );
     } else {
       // Turn off user mode "Crowded" by switching to user mode "Auto".
       const payload = `{
