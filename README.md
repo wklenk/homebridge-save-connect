@@ -18,10 +18,11 @@ This plugin automatically discovers SAVE CONNECT devices on the local network us
 ## Features
 
 - **Automatic discovery** of SAVE CONNECT devices (no manual configuration required)
-- **Real-time monitoring** of the ventilation system's current user mode (Auto, Refresh)
-- **HomeKit switch** to trigger **short-term ventilation** (Switch to user mode "Refresh")
+- **Real-time monitoring** of the ventilation system's current user mode (Auto, Crowded,Refresh)
+- **HomeKit switch** to trigger **short-term ventilation** (Switch to user mode "Refresh" for 5 minutes)
+- **HomeKit switch** to trigger **mid-term ventilation** (Switch to user mode "Crowded" for 1 hour)
 - **Siri voice control** supported
-- **Regular state synchronization** with the device (default every 15 seconds)
+- **Regular state synchronization** with the device (Every 30 seconds)
 
 ---
 
